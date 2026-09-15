@@ -2,6 +2,7 @@ export const profile = {
   name: "Didar Ali",
   firstName: "Didar",
   title: "Junior Data Scientist | Machine Learning | Data Analytics",
+  roleLine: "Data Analyst · AI/ML Engineer",
   location: "Rawalpindi, Pakistan",
   locationNote: "open to relocation",
   email: "didarali1129@gmail.com",
@@ -11,8 +12,8 @@ export const profile = {
   photo: "/Deed.png",
   resume: "/Didar_Ali_Data_Analyst.pdf",
   summary:
-    "Computer Systems Engineering graduate with hands-on experience turning messy data and research ideas into working AI systems. I work across Python, SQL, machine learning, computer vision, OCR, and production AI workflows — with a focus on building things that are useful, testable, and ready to ship.",
-  tagline: "Building practical intelligence from data, one thoughtful pipeline at a time.",
+    "Data analyst and AI/ML builder with a Computer Systems Engineering background and hands-on experience turning messy data and research ideas into useful systems. I work across Python, SQL, dashboards, machine learning, computer vision, OCR, and production AI workflows — with a focus on making the result clear, testable, and ready to use.",
+  tagline: "Turning raw data into decisions and models into useful tools.",
   availability: "Available for opportunities",
   heroStats: [
     { value: "~79%", label: "SER accuracy" },
@@ -20,6 +21,27 @@ export const profile = {
     { value: "2025", label: "published research" },
   ],
 };
+
+export const focusAreas = [
+  {
+    eyebrow: "DATA ANALYSIS",
+    title: "From raw tables to decisions.",
+    copy: "I clean, model, query, and visualize data so patterns become clear enough to support a real decision.",
+    tags: ["SQL", "Pandas", "Power BI"],
+  },
+  {
+    eyebrow: "AI / ML ENGINEERING",
+    title: "From models to usable systems.",
+    copy: "I connect machine-learning ideas to practical interfaces, APIs, validation steps, and end-to-end workflows.",
+    tags: ["PyTorch", "Transformers", "FastAPI"],
+  },
+  {
+    eyebrow: "DELIVERY",
+    title: "Clear, testable, production-minded.",
+    copy: "I care about the layer around the model: reproducible pipelines, readable outputs, and tools people can actually use.",
+    tags: ["Docker", "Git", "Linux"],
+  },
+];
 
 export const experience = [
   {
@@ -47,6 +69,8 @@ export type Project = {
   imageLabel?: string;
   gallery?: string[];
   metrics?: string[];
+  repository?: string;
+  demo?: string;
 };
 
 export const projects: Project[] = [
@@ -61,6 +85,7 @@ export const projects: Project[] = [
     imageLabel: "POWER BI / ANALYTICS",
     gallery: ["/nyc-taxi-pulse/geography.png", "/nyc-taxi-pulse/time-patterns.png", "/nyc-taxi-pulse/demand-heatmap.png"],
     metrics: ["18:00 busiest pickup hour", "JFK: 49,673 trips", "12.37 mph average speed"],
+    repository: "https://github.com/didar-ali-deed/nyc-taxi-pulse",
     bullets: [
       "Built a reproducible workflow from public TLC Parquet ingestion through pandas/NumPy cleaning, SQLite modeling, analytical SQL, and dashboard design.",
       "Retained 1,000,000 cleaned trips from January 1 through February 28, 2023 after validation and filtering.",
@@ -78,6 +103,7 @@ export const projects: Project[] = [
     image: "/projects/speech-training-curves.png",
     imageLabel: "RESEARCH / TRAINING",
     gallery: ["/projects/speech-class-metrics.png"],
+    repository: "https://github.com/didar-ali-deed/Vocal-Sentiment-Transformer-Based-Speech-Emotion-Recognition",
     bullets: [
       "Built an end-to-end speech emotion recognition pipeline around Wav2Vec2.",
       "Applied signal processing and transformer fine-tuning to audio inputs.",
@@ -103,13 +129,18 @@ export const projects: Project[] = [
     number: "04",
     title: "AI Health Super App",
     type: "Applied ML · Dashboard",
-    description: "A multi-disease prediction experience combining complementary machine learning models behind a simple dashboard.",
-    impact: "Ensemble prediction with Streamlit UI",
-    tags: ["CNN/DNN/XGBoost", "Streamlit", "Healthcare AI"],
+    description: "A Streamlit health diagnostics platform with secure login, prediction history, and three model pathways for diabetes, Parkinson’s disease, and pneumonia.",
+    impact: "3 model pathways · reported ~88–92% accuracy",
+    tags: ["XGBoost", "TensorFlow/Keras", "Librosa", "Streamlit"],
+    image: "/projects/health-ai.svg",
+    imageLabel: "ML / HEALTHCARE AI",
+    repository: "https://github.com/didar-ali-deed/health-ai-super-app",
+    demo: "https://health-ai-super-app-deed.streamlit.app",
+    metrics: ["Diabetes · ~88%", "Parkinson’s · ~91%", "Pneumonia · ~92%"],
     bullets: [
-      "Combined CNN, DNN, and XGBoost models for multi-disease prediction.",
-      "Connected model outputs to a Streamlit dashboard for interaction.",
-      "Structured the experience around a unified, multi-condition workflow.",
+      "Built three prediction pathways: XGBoost for diabetes, a Keras DNN for Parkinson’s, and a TensorFlow CNN for pneumonia X-rays.",
+      "Added secure login and prediction-history tracking with SQLite-backed application flows.",
+      "Connected model outputs to a routed Streamlit experience with custom styling and supporting privacy/contact pages.",
     ],
   },
   {

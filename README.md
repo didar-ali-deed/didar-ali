@@ -19,6 +19,8 @@ All profile content lives in [`data.ts`](./data.ts): contact details, experience
 
 The supplied portrait and resume are served from `public/Deed.png` and `public/Didar_Ali_Data_Analyst.pdf`. Update their paths in `data.ts` if you replace either asset.
 
+The portfolio presents two connected tracks: data analysis (SQL, Python, Power BI, and decision-ready reporting) and AI/ML engineering (model workflows, computer vision, NLP, audio ML, APIs, and applied dashboards). The Health AI Super App card includes links to its [repository](https://github.com/didar-ali-deed/health-ai-super-app) and [live demo](https://health-ai-super-app-deed.streamlit.app).
+
 The contact form opens a pre-filled email in the visitor’s default mail app using `mailto:`. No third-party form service is required.
 
 ## Deploy to Vercel

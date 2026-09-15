@@ -183,5 +183,12 @@ input:focus, textarea:focus { background: color-mix(in srgb, var(--accent-soft) 
 .site-footer { border-top: 1px solid var(--line); }
 .modal-backdrop { position: fixed; inset: 0; z-index: 50; display: flex; align-items: center; justify-content: center; background: rgba(3,9,18,.72); padding: 2rem 1.25rem; backdrop-filter: blur(12px); }
 .modal-panel { position: relative; max-height: 90vh; width: 100%; max-width: 42rem; overflow-y: auto; border: 1px solid var(--line); border-radius: 1.25rem; background: var(--surface-solid); padding: 1.5rem; box-shadow: 0 30px 90px rgba(0,0,0,.3); }
+.capability-section { border-bottom: 1px solid var(--line); background: color-mix(in srgb, var(--accent-soft) 28%, transparent); padding: 5.5rem 0; }
+.capability-intro { display: flex; flex-direction: column; justify-content: space-between; gap: 1.25rem; margin-bottom: 2.5rem; }
+.capability-grid { display: grid; gap: 1rem; }
+.capability-card { position: relative; min-height: 15rem; overflow: hidden; border: 1px solid var(--line); border-radius: 1.25rem; background: var(--surface); padding: 1.5rem; transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease; }
+.capability-card:hover { border-color: color-mix(in srgb, var(--accent) 48%, var(--line)); box-shadow: 0 20px 45px rgba(16,32,51,.08); transform: translateY(-4px); }
+.capability-number { position: absolute; right: 1.35rem; top: 1.25rem; color: color-mix(in srgb, var(--accent) 48%, transparent); font-family: var(--font-mono); font-size: .65rem; letter-spacing: .12em; }
 @media (min-width: 640px) { .portrait-image { height: 34rem; } .feature-panel, .dark-panel, .skill-card, .contact-form { padding: 2rem; } .publication-panel { padding: 2.5rem; } }
+@media (min-width: 768px) { .capability-intro { flex-direction: row; align-items: end; } .capability-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } .capability-card { padding: 1.75rem; } }
 @media (max-width: 767px) { .project-featured { display: flex; } .project-featured .project-cover { min-height: 15rem; } .metric-strip { margin-top: 4rem; } .portrait-note { right: .5rem; } }
