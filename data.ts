@@ -44,6 +44,7 @@ export type Project = {
   tags: string[];
   bullets: string[];
   image?: string;
+  imageLabel?: string;
   gallery?: string[];
   metrics?: string[];
 };
@@ -57,6 +58,7 @@ export const projects: Project[] = [
     impact: "1M cleaned trips · $27.30M recorded revenue",
     tags: ["Python", "SQL", "SQLite", "Power BI"],
     image: "/nyc-taxi-pulse/overview.png",
+    imageLabel: "POWER BI / ANALYTICS",
     gallery: ["/nyc-taxi-pulse/geography.png", "/nyc-taxi-pulse/time-patterns.png", "/nyc-taxi-pulse/demand-heatmap.png"],
     metrics: ["18:00 busiest pickup hour", "JFK: 49,673 trips", "12.37 mph average speed"],
     bullets: [
@@ -73,6 +75,9 @@ export const projects: Project[] = [
     description: "A transformer-based pipeline that recognizes emotion from speech and turns raw audio into meaningful vocal sentiment signals.",
     impact: "~79% accuracy · Published research",
     tags: ["Wav2Vec2", "Transformers", "Signal Processing"],
+    image: "/projects/speech-training-curves.png",
+    imageLabel: "RESEARCH / TRAINING",
+    gallery: ["/projects/speech-class-metrics.png"],
     bullets: [
       "Built an end-to-end speech emotion recognition pipeline around Wav2Vec2.",
       "Applied signal processing and transformer fine-tuning to audio inputs.",
@@ -86,6 +91,8 @@ export const projects: Project[] = [
     description: "A multi-stage workflow for extracting, verifying, and validating identity data from documents and NFC e-passports.",
     impact: "OCR + CV + NFC validation pipeline",
     tags: ["OCR", "Computer Vision", "NFC", "Data Validation"],
+    image: "/projects/idv-pipeline.svg",
+    imageLabel: "OCR / IDENTITY PIPELINE",
     bullets: [
       "Designed OCR and computer-vision steps for document understanding.",
       "Worked with NFC e-passport chip reading as part of identity verification.",
@@ -112,6 +119,9 @@ export const projects: Project[] = [
     description: "A fine-tuned language model served through a FastAPI backend with a React frontend for exploring sentiment predictions.",
     impact: "Model-to-interface NLP workflow",
     tags: ["BERT", "FastAPI", "React", "NLP"],
+    image: "/projects/sentiment-ui.png",
+    imageLabel: "NLP / PRODUCT UI",
+    gallery: ["/projects/bert-class-distribution.png"],
     bullets: [
       "Fine-tuned BERT for sentiment analysis.",
       "Exposed inference through a FastAPI backend.",
