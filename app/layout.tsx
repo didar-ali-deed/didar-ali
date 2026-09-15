@@ -7,21 +7,21 @@ const display = Space_Grotesk({ subsets: ["latin"], variable: "--font-display" }
 const mono = IBM_Plex_Mono({ subsets: ["latin"], variable: "--font-mono", weight: ["400", "500", "600"] });
 
 export const metadata: Metadata = {
-  title: "Didar Ali — Junior Data Scientist & AI-ML Engineer",
-  description: "Portfolio of Didar Ali, a Junior Data Scientist and AI-ML Engineer working across machine learning, data analytics, computer vision, and production AI workflows.",
-  keywords: ["Didar Ali", "Data Scientist", "Machine Learning", "AI Engineer", "Python", "Pakistan"],
+  title: "Didar Ali — Data Analyst & AI/ML Engineer",
+  description: "Portfolio of Didar Ali, a Data Analyst and AI/ML Engineer working across SQL, Python, data visualization, machine learning, computer vision, and applied AI workflows.",
+  keywords: ["Didar Ali", "Data Analyst", "Data Analytics", "Machine Learning", "AI Engineer", "Python", "Pakistan"],
   authors: [{ name: "Didar Ali" }],
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
   openGraph: {
-    title: "Didar Ali — Junior Data Scientist & AI-ML Engineer",
-    description: "Building practical intelligence from data, one thoughtful pipeline at a time.",
+    title: "Didar Ali — Data Analyst & AI/ML Engineer",
+    description: "Turning raw data into decisions and models into useful tools.",
     type: "website",
     siteName: "Didar Ali Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Didar Ali — Junior Data Scientist & AI-ML Engineer",
-    description: "Portfolio of Didar Ali — machine learning, analytics, computer vision, and AI workflows.",
+    title: "Didar Ali — Data Analyst & AI/ML Engineer",
+    description: "Portfolio of Didar Ali — data analytics, machine learning, computer vision, and applied AI workflows.",
   },
 };
 
