@@ -161,6 +161,23 @@ export const projects: Project[] = [
   },
   {
     number: "06",
+    title: "Sentiment Intelligence Lab",
+    type: "NLP · Applied ML Interface",
+    description: "A focused sentiment-analysis workspace for scoring individual text and exploring batch insights through a production-style DistilBERT inference workflow.",
+    impact: "Single inference · Batch insights · Model card",
+    tags: ["DistilBERT", "NLP", "Python", "API"],
+    image: "/projects/sentiment-lab.svg",
+    imageLabel: "DISTILBERT / NLP APP",
+    repository: "https://github.com/didar-ali-deed/sentiment-analysis-app",
+    metrics: ["Single inference", "Batch insights", "Confidence metadata"],
+    bullets: [
+      "Designed a dark, focused interface for analyzing individual text inputs with a clear output state.",
+      "Added a batch-insights workspace for profiling a small text dataset alongside single-text analysis.",
+      "Presented confidence and token-level metadata around a DistilBERT API workflow.",
+    ],
+  },
+  {
+    number: "07",
     title: "Multi-Source Job Data Scraper",
     type: "Data Engineering · Automation",
     description: "A Python and Playwright collection pipeline that brings job listings together and keeps the final dataset clean and useful.",
